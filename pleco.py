@@ -3,6 +3,7 @@ import ChineseNameGenerator
 import ChinesePhoneNumberGenerator
 import ChineseIDCardNumberGenerator
 import ChineseBankCardNumberGenerator
+import EmailGenerator
 
 
 class Pleco(object):
@@ -21,7 +22,8 @@ class Pleco(object):
     def banknum(self):
         return ChineseBankCardNumberGenerator.get_bank_card()
 
-
+    def email(self):
+        return EmailGenerator.get_email()
 if __name__ == '__main__':
     p = Pleco()
     print(p.address())
@@ -29,3 +31,4 @@ if __name__ == '__main__':
     print(p.phone())
     print(p.idnum())
     print(p.banknum())
+    print(p.email())
