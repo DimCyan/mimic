@@ -351,7 +351,6 @@ city_name = [
 
 def get_city_name() -> str:
     n = random.sample(city_name, 1)
-    print(n)
     return ''.join(n)
 
 
